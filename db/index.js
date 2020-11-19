@@ -1,24 +1,18 @@
-const mongoose = require("mongoose");
-const path = require("path");
-require("dotenv").config({ path: path.resolve(__dirname, "../.env") });
+const mongoose = require('mongoose')
 const Project = require("./Project");
+require("dotenv").config();
+const url = process.env.MONGODB_URL;
 
-mongoose.set("useNewUrlParser", true);
-mongoose.set("useFindAndModify", false);
-mongoose.set("useCreateIndex", true);
-mongoose.set("useUnifiedTopology", true);
-
-mongoose
-  .connect(process.env.MONGODB_URI)
-  .then((conn) => {
-    console.log(`Connected to ${conn.connections[0].name}`);
-  })
-  .catch((err) => {
-    console.log(`Error connecting to the DB: ${err}`);
-  });
-
-module.exports = {
-  disconnect: () => {
-    mongoose.connection.close();
-  },
-};
+const connectionParams={
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true 
+}
+mongoose.connect(url,connectionParams)
+    .then( () => {
+        console.log('Connected to database ')
+    })
+    .catch( (err) => {
+        console.error(`Error connecting to the database. \n${err}`);
+    })
+    
