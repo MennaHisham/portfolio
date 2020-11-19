@@ -1,0 +1,42 @@
+.wholePage {
+  background-color: black;
+  font-family: "Lucida Console", Courier, monospace;
+  padding: 50px 80px;
+}
+h1 {
+  color: white;
+  float: left;
+  position: relative;
+}
+.navbar-container {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background: transparent;
+  overflow: hidden;
+}
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar-nav {
+  float: right;
+  /* padding: 14px 20px; */
+}
+.navbar-item {
+  font-family: "Lucida Console", Courier, monospace;
+  border: none;
+  background: none;
+  position: relative;
+  display: block;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  /* padding: 14px 20px; */
+  margin: 14px 20px;
+  text-decoration: none;
+}
+li button:hover {
+  color: rgb(76, 204, 198);
+}
