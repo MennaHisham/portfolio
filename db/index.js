@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const Project = require("./Project");
 require("dotenv").config();
-const url = process.env.MONGODB_URL;
+const url = process.env.MONGODB_URI;
 
 const connectionParams={
     useNewUrlParser: true,
