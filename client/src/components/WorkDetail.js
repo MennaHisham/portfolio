@@ -102,8 +102,8 @@ export default class WorkDetail extends Component {
     `;
 
     const Image = styled.img`
-      max-width: 400px;
-      max-height:500px;
+      width: 500px;
+      height:600px;
       @media (max-width: 767px) {
         max-width: 200px;
       }
@@ -215,9 +215,11 @@ export default class WorkDetail extends Component {
       }
     `;
     
-    if (!work) {
-      return <div>Loading</div>;
-    }
+    if (this.state.work.lenghth===0) {
+            return <div class="loading">
+  <span>loading</span>
+</div>
+    }else{
     return (
       <div>
       <Link to="/">
@@ -287,6 +289,7 @@ export default class WorkDetail extends Component {
         </DetailContainer>
       </div>
     );
+  }
   }
 }
 

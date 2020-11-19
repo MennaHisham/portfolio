@@ -117,7 +117,7 @@ export default class Services extends React.Component {
             list-style: none;
             color: #c5c5c5;
             font-weight: 300;
-            font-size: 14px;
+            font-size: 17px;
             margin: 5px 0px;
             &::before {
                 display: inline-block;

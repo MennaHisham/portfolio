@@ -13,27 +13,9 @@ class Footer extends React.Component{
             align-items: center;
             justify-content: center;
         `
-
-        const SocialIcons = styled.div`
-            .social_icon {
-                font-size: 15px;
-                color: #555;
-                margin: 0 5px;
-                cursor: pointer;
-                transition: .5s;
-                &:hover {
-                    color: #04e5e5;
-                }
-            }
-        `
         return (
             <FooterMain>
-                <SocialIcons>
-                    <FontAwesomeIcon icon={faGithub} className="social_icon" onClick={() => window.open('https://www.github.com')}/>
-                    <FontAwesomeIcon icon={faTwitter} className="social_icon" onClick={() => window.open('https://www.twitter.com')} />
-                    <FontAwesomeIcon icon={faYoutube} className="social_icon" onClick={() => window.open('https://www.youtube.com')} />
-                    <FontAwesomeIcon icon={faLinkedin} className="social_icon" onClick={() => window.open('https://www.linkedin.com')} />
-                </SocialIcons>
+          
             </FooterMain>
         )
     }

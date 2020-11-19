@@ -94,7 +94,7 @@ export default class AboutMe extends React.Component {
     `;
 
     const Text = styled.p`
-      font-size: 15px;
+      font-size: 17px;
       font-weight: 300;
       color: #c5c5c5;
     `;

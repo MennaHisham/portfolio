@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component}from "react";
 import Helmet from "react-helmet";
 import Layout from "./Layout";
 import Intro from "../sections/Intro/PersonalIntro";
@@ -13,14 +13,7 @@ class Index extends Component{
   state={
     data: []
   }
-  // componentDidMount() {
-  //   this._isMounted=true;
-  //  axios.get("/api/projects").then((res) => {
-  //    if(this._isMounted===true){
-  //     this.setState({ data:res.data });
-  //    }
-  //   });
-  // }
+
      async componentDidMount() {
         this._isMounted=true;
     const response = await axios.get("/api/projects");
@@ -34,7 +27,7 @@ class Index extends Component{
   }
   render() {
       if(this.state.data.length !==0 && this._isMounted){
-     return ( <div>
+     return ( <React.Fragment>
         <Helmet>
           <title>Minatallah</title>
           <meta name="description" content="Personal Portfolio" />
@@ -49,11 +42,13 @@ class Index extends Component{
           <Work data={this.state.data} />
           <Contact />  
         </Layout>
-      </div>
+      </React.Fragment>
       )
       }
       else{
-        return "Loading"
+        return <div class="loading">
+  <span>loading</span>
+</div>
       }
     
   }

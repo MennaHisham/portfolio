@@ -48,7 +48,7 @@ class ContactForm extends React.Component {
         const ContactForm = styled.div`
             padding: 40px;
             width: 100%;
-            position: relative;
+            position: center;
             z-index: 5;
         `
 
@@ -74,6 +74,7 @@ class ContactForm extends React.Component {
 
         const Input = styled.input`
             width: 100%;
+            font-size:20px;
             background-color: #111;
             border: none;
             border-bottom: 1px solid #444;
@@ -91,6 +92,7 @@ class ContactForm extends React.Component {
         `
 
         const Textarea = styled.textarea`
+            font-size:20px;
             width: 100%;
             background-color: #111;
             border: none;
@@ -99,7 +101,7 @@ class ContactForm extends React.Component {
             border-radius: 0;
             color: rgb(255, 255, 255);
             transition: all 0.5s ease 0s;
-            min-height: 100px;
+            min-height: 250px;
             margin-top: 0px;
             margin-bottom: 0px;
             height: 100px;
@@ -110,6 +112,7 @@ class ContactForm extends React.Component {
         `
 
         const Submit = styled.button`
+        font-size: 20px;
             display: block;
             height: 50px;
             width: 186px;
@@ -119,7 +122,7 @@ class ContactForm extends React.Component {
             transition: .5s;
             background-color: #000;
             &:hover {
-              background: #444;
+              background: #04e5e5;
             }
             span {
               position: relative;

@@ -14,7 +14,7 @@ export default class App extends Component {
               <WorkDetail {...props} history={props.history} />
             )}/>
   <Route exact path="/" render={props => (
-              <Index {...props} />
+              <Index {...props} history={props.history}/>
             )}/>
     </div>
     )

@@ -16,16 +16,12 @@ export default class Contact extends React.Component {
             padding: 100px 0;
         `
 
-        const FormRow = styled(Row)`
-           background-color: #111;
-        `
-
         const ContactCol = styled(Col)`
-            min-height: 600px;
-            max-height: 600px;
-            padding: 0;
-            display: flex;
-            align-items: center;
+            min-height: 800px;
+            max-height: 1000px;
+            width: 900px:
+            background-color: #111;
+            
         `
 
         const gradientAnimation = keyframes`
@@ -49,15 +45,6 @@ export default class Contact extends React.Component {
             background: linear-gradient(120deg, #04e5e5, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
             background-size: 300% 300%;
             animation: ${gradientAnimation} 5s ease-in-out infinite;
-        `
-
-
-
-
-        const Map = styled.iframe`
-            border: none;
-            height: 100%;
-            width: 100%;
         `
 
         const IconRow = styled(Row)`
@@ -113,6 +100,7 @@ export default class Contact extends React.Component {
         `
 
         const InfoLink = styled.a`
+        font-size: 20px;
             color: #04e5e5;
             transition: .5s;
             &:hover {
@@ -126,17 +114,10 @@ export default class Contact extends React.Component {
             <Section id="contact">
                 <Container>
                   <AnimationContainer animation="fadeIn">
-                    <FormRow>
                       <ContactCol md={6}>
                           <ContactForm />
                           <Gradient />
                       </ContactCol>
-                      {/* <ContactCol md={6}>
-                        <Map  
-                          title="map"
-                          src="https://www.google.com/maps/@$52.498522,$13.399330,$14z"/>
-                      </ContactCol> */}
-                    </FormRow>
                   </AnimationContainer>
                   <IconRow>
                       <IconCol md={4}>
