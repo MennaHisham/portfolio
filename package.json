@@ -9,7 +9,8 @@
     "install-client": "cd client && npm install",
     "heroku-postbuild": "npm run install-client && npm run build",
     "start": "node server.js",
-    "client": "cd client && npm start"
+    "client": "cd client && npm start",
+    "watch": "nodemon --watch directory-to-watch"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +19,10 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.10.13",
-    "morgan": "^1.10.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "foreman": "^3.0.1",
     "nodemon": "^2.0.6"
   }
 }
