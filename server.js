@@ -7,7 +7,7 @@ const PORT= process.env.PORT || 8000;
 const routes = require("./routes");
 app.use(routes);
 
-if(process.env.NODE_ENV=== 'production'){
+if(process.env.NODE_ENV === 'production'){
   app.use(express.statc('client/build'));
 }
 
