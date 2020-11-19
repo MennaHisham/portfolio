@@ -2,6 +2,7 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import Typewriter from "typewriter-effect";
 import Glitch from "./Glitch";
+import PDF from "./resume.pdf"
 
 class PersonalIntro extends React.Component {
 
@@ -196,7 +197,7 @@ class PersonalIntro extends React.Component {
                 }}
               />
             </Type>
-            <Resume href="./resume.pdf" target="_blank">
+            <Resume href={PDF} target="_blank">
               Download Resume
             </Resume>
           </HeadingBox>

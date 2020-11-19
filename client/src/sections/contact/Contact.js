@@ -88,6 +88,10 @@ export default class Contact extends React.Component {
             color: #fff;
             font-family: Teko;
             text-align: center;
+            &:hover {
+              color: #fff;
+              text-decoration: none;
+            }
         `
 
         const Info = styled.div`
@@ -100,13 +104,9 @@ export default class Contact extends React.Component {
         `
 
         const InfoLink = styled.a`
-        font-size: 20px;
             color: #04e5e5;
             transition: .5s;
-            &:hover {
-              color: #fff;
-              text-decoration: none;
-            }
+         
         `
         
 

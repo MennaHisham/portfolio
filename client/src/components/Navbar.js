@@ -181,7 +181,6 @@ class Navbar extends React.Component {
       color: #fff;
       text-transform: capitalize;
       font-weight: 500;
-      font-size: 22px;
       margin: 10px 5px;
       transition: 0.5s;
       &:hover {

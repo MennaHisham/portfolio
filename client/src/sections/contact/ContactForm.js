@@ -74,7 +74,6 @@ class ContactForm extends React.Component {
 
         const Input = styled.input`
             width: 100%;
-            font-size:20px;
             background-color: #111;
             border: none;
             border-bottom: 1px solid #444;
@@ -92,7 +91,6 @@ class ContactForm extends React.Component {
         `
 
         const Textarea = styled.textarea`
-            font-size:20px;
             width: 100%;
             background-color: #111;
             border: none;
@@ -112,7 +110,6 @@ class ContactForm extends React.Component {
         `
 
         const Submit = styled.button`
-        font-size: 20px;
             display: block;
             height: 50px;
             width: 186px;

@@ -71,7 +71,7 @@ class Timeline extends React.Component {
       margin-bottom: 5px;
     `;
     const Text = styled.p`
-      font-size: 17px;
+      font-size: 12px;
       font-weight: 300;
       color: #c5c5c5;
     `;

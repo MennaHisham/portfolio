@@ -44,7 +44,7 @@ class TabsPart extends React.Component {
         `
         const TabSelector = styled.button`
             color: #fff;
-            font-size: 22px;
+            font-size: 20px;
             font-weight: bold;
             background-color: transparent;
             border: none;
