@@ -25,16 +25,6 @@ export default class WorkDetail extends Component {
   }
     }
 
-    //   this._isMounted=true;
-    // const name = this.props.match.params.name;
-    // axios.get(`/api/project/${name}`).then(response => {
-    //     if(this._isMounted===true){
-    //   this.setState({
-    //     work: response.data
-    //   });
-    // }
-    // })
-  
   componentWillUnmount(){
       this._isMounted=false;
   }
@@ -102,8 +92,7 @@ export default class WorkDetail extends Component {
     `;
 
     const Image = styled.img`
-      width: 500px;
-      height:600px;
+     max-width: 400px;
       @media (max-width: 767px) {
         max-width: 200px;
       }
@@ -189,7 +178,7 @@ export default class WorkDetail extends Component {
     `;
 
     const Text = styled.p`
-      font-size: 20px;
+      font-size: 15px;
       font-weight: 300;
       color: #c5c5c5;
       text-align-last: center;
