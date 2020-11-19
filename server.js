@@ -8,7 +8,7 @@ const routes = require("./routes");
 app.use(routes);
 
 if(process.env.NODE_ENV === 'production'){
-  app.use(express.statc('client/build'));
+  app.use(express.static('client/build'));
 }
 
 app.listen(PORT , function () {
