@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 const Project = require("./Project");
-const url = `mongodb+srv://menna-123:menna123@menna.qd83x.mongodb.net/portfolio?retryWrites=true&w=majority`;
+require("dotenv").config();
+const url = process.env.MONGODB_URL;
 
 const connectionParams={
     useNewUrlParser: true,
